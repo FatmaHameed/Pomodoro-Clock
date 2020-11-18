@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'digital-clock-font';
+  src: url('digital-7.regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#app {
+  height: 100vh;
+  background-color: rgba(7, 74, 75, 0.795);
+  color: white;
+  text-align: center;
+}
+#header {
+  padding: 3rem 2rem 0.5rem;
+  font-size: 2em;
+}
+h2 {
+  padding: 1rem 2rem 0.5rem;
+  font-size: 2em;
+}
+#time-up-down {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: 1rem;
+}
+button {
+  margin: 0 1rem;
+  font-size: 1.2em;
+  color: white;
+  background-color: transparent;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+i {
+  font-size: 1.5em;
+}
+
+#time-up-down p {
+  margin: 0 1rem;
+  font-size: 2em;
+  font-family: 'Times New Roman', Times, serif;
+}
+#session-control {
+  border: solid 5px rgba(70, 68, 68, 0.884);
+  box-sizing: content-box;
+  width: 30%;
+  margin: 1.5rem auto;
+  height: 30%;
+  border-radius: 20px;
+  font-size: 2.5em;
+  font-family: 'digital-clock-font';
+}
+#session-control h3 {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 1.5rem auto;
+  font-size: 1em;
+}
+#timer {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+@media (max-width: 450px) {
+  #session-control {
+    width: 60%;
+  }
+  #header {
+    font-size: 1.5em;
+  }
+}
